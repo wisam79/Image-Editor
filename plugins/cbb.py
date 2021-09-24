@@ -54,35 +54,35 @@ from script import script  # pylint:disable=import-error
 async def cb_handler(client: Client, query: CallbackQuery):
     if query.data == "removebg":
         await query.message.edit_text(
-            "**Select required mode**ㅤㅤㅤㅤ",
+            "**اختر الامر الذي تريده**ㅤㅤㅤㅤ",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="WITH WHITE BG", callback_data="rmbgwhite"
+                            text="مع خلفية بيضاء", callback_data="rmbgwhite"
                         ),
                         InlineKeyboardButton(
-                            text="WITHOUT BG", callback_data="rmbgplain"
+                            text="بدون خلفية", callback_data="rmbgplain"
                         ),
                     ],
-                    [InlineKeyboardButton(text="STICKER", callback_data="rmbgsticker")],
+                    [InlineKeyboardButton(text="ملصق", callback_data="rmbgsticker")],
                 ]
             ),
         )
     elif query.data == "stick":
         await query.message.edit(
-            "**Select a Type**",
+            "**اختر النوع الذي تريده**",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="Normal", callback_data="stkr"),
+                        InlineKeyboardButton(text="عادي", callback_data="stkr"),
                         InlineKeyboardButton(
-                            text="Edge Curved", callback_data="cur_ved"
+                            text="زاوية منحنية", callback_data="cur_ved"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="Circle", callback_data="circle_sticker"
+                            text="دائرة", callback_data="circle_sticker"
                         )
                     ],
                 ]
@@ -90,7 +90,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "rotate":
         await query.message.edit_text(
-            "**Select the Degree**",
+            "**اختر زاوية التدوير**",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -106,12 +106,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("HELP", callback_data="help_data"),
-                    InlineKeyboardButton("ABOUT", callback_data="about_data"),
+                    InlineKeyboardButton("مساعدة", callback_data="help_data"),
+                    InlineKeyboardButton("حول", callback_data="about_data"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "SOURCE CODE", url="https://github.com/TroJanzHEX/Image-Editor"
+                        "SOURCE CODE", url="https://t.me/wsh23"
                     )
                 ],
             ]
@@ -126,12 +126,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("BACK", callback_data="start_data"),
-                    InlineKeyboardButton("ABOUT", callback_data="about_data"),
+                    InlineKeyboardButton("عودة", callback_data="start_data"),
+                    InlineKeyboardButton("حول", callback_data="about_data"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "SOURCE CODE", url="https://github.com/TroJanzHEX/Image-Editor"
+                        "قناتي", url="https://t.me/wsh23"
                     )
                 ],
             ]
@@ -143,12 +143,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("BACK", callback_data="help_data"),
-                    InlineKeyboardButton("START", callback_data="start_data"),
+                    InlineKeyboardButton("عودة", callback_data="help_data"),
+                    InlineKeyboardButton("ابدأ", callback_data="start_data"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "SOURCE CODE", url="https://github.com/TroJanzHEX/Image-Editor"
+                        "SOURCE CODE", url="https://t.me/wsh23"
                     )
                 ],
             ]
@@ -158,15 +158,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "glitch":
         await query.message.edit_text(
-            "**Select required mode**ㅤㅤㅤㅤ",
+            "**اختار الوضع الذي تريده**ㅤㅤㅤㅤ",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="NORMAL", callback_data="normalglitch"
+                            text="طبيعي", callback_data="normalglitch"
                         ),
                         InlineKeyboardButton(
-                            text="SCAN LINES", callback_data="scanlineglitch"
+                            text="مسح خطي", callback_data="scanlineglitch"
                         ),
                     ]
                 ]
@@ -174,7 +174,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "normalglitch":
         await query.message.edit_text(
-            "**Select Glitch power level**",
+            "**اختر قوة التشويه**",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -191,7 +191,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "scanlineglitch":
         await query.message.edit_text(
-            "**Select Glitch power level**",
+            "**اختر قوة التشويه**",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -208,28 +208,28 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "blur":
         await query.message.edit(
-            "**Select a Type**",
+            "**اختر النوع **",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="box", callback_data="box"),
-                        InlineKeyboardButton(text="normal", callback_data="normal"),
+                        InlineKeyboardButton(text="صندوق", callback_data="box"),
+                        InlineKeyboardButton(text="طبيعي", callback_data="normal"),
                     ],
-                    [InlineKeyboardButton(text="Gaussian", callback_data="gas")],
+                    [InlineKeyboardButton(text="غاوسي", callback_data="gas")],
                 ]
             ),
         )
     elif query.data == "circle":
         await query.message.edit_text(
-            "**Select required mode**",
+            "**اختر ما تريد فعله**",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="WITH BG", callback_data="circlewithbg"
+                            text="خلفية بيضاء", callback_data="circlewithbg"
                         ),
                         InlineKeyboardButton(
-                            text="WITHOUT BG", callback_data="circlewithoutbg"
+                            text="بدون خلفية", callback_data="circlewithoutbg"
                         ),
                     ]
                 ]
@@ -237,16 +237,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "border":
         await query.message.edit(
-            "**Select Border**",
+            "**اختر لون الاطار**",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="🔴 RED 🔴", callback_data="red"),
-                        InlineKeyboardButton(text="🟢 Green 🟢", callback_data="green"),
+                        InlineKeyboardButton(text="🔴 احمر 🔴", callback_data="red"),
+                        InlineKeyboardButton(text="🟢 اخضر 🟢", callback_data="green"),
                     ],
                     [
-                        InlineKeyboardButton(text="⚫ Black ⚫", callback_data="black"),
-                        InlineKeyboardButton(text="🔵 Blue 🔵", callback_data="blue"),
+                        InlineKeyboardButton(text="⚫ اسود ⚫", callback_data="black"),
+                        InlineKeyboardButton(text="🔵 ازرق 🔵", callback_data="blue"),
                     ],
                 ]
             ),
