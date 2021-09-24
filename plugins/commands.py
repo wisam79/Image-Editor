@@ -13,13 +13,13 @@ async def start(client: Client, message: Message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("HELP", callback_data="help_data"),
-                        InlineKeyboardButton("ABOUT", callback_data="about_data"),
+                        InlineKeyboardButton("مساعدة", url= "https://t.me/wsh22"),
+                        InlineKeyboardButton("قناتي", url= "https://t.me/wsh23"),
                     ],
                     [
                         InlineKeyboardButton(
                             "SOURCE CODE",
-                            url="https://github.com/TroJanzHEX/Image-Editor",
+                            url="https://github.com/wisam79/Image-Editor,",
                         )
                     ],
                 ]
@@ -44,7 +44,7 @@ async def help(client, message):
                     ],
                     [
                         InlineKeyboardButton(
-                            "SOURCE CODE",
+                            "رابط السورس",
                             url="https://github.com/TroJanzHEX/Image-Editor",
                         )
                     ],
