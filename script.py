@@ -5,13 +5,13 @@ class script(object):
 I'm a Image Editor Bot which Supports various modes
 
 For more text me @wsh22....</b>"""
-    HELP_MSG = """Hai, Follow these Steps..,
+    HELP_MSG = """...مرحبا اتبع الخطوات التالية, ..,
 
-<code>🌀 Send me any Image to Edit..</code>
+<code>🌀 قم بارسال الصورة المراد تعديلها..</code>
 
-<code>🌀 Select the Corresponding mode that you need</code>
+<code>🌀 قم باختيار الفلتر الذي تريده..</code>
 
-<code>🌀 Your Edited Image will be Uploaded </code>
+<code>🌀  سيتم ارسال الصورة المحررة لك..</code>
 
 
 © @wsh23"""
