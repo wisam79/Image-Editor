@@ -8,38 +8,38 @@ async def photo(client: Client, message: Message):
     try:
         await client.send_message(
             chat_id=message.chat.id,
-            text="Select your required mode from below!ㅤㅤ",
+            text="اختر ما تريد فعله للصورة من القائمةㅤㅤ",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="BRIGHT", callback_data="bright"),
-                        InlineKeyboardButton(text="MIXED", callback_data="mix"),
-                        InlineKeyboardButton(text="B&W", callback_data="b|w"),
+                        InlineKeyboardButton(text="سطوع", callback_data="bright"),
+                        InlineKeyboardButton(text="ميكس", callback_data="mix"),
+                        InlineKeyboardButton(text="اسود وابيض", callback_data="b|w"),
                     ],
                     [
-                        InlineKeyboardButton(text="CIRCLE", callback_data="circle"),
-                        InlineKeyboardButton(text="BLUR", callback_data="blur"),
-                        InlineKeyboardButton(text="BORDER", callback_data="border"),
+                        InlineKeyboardButton(text="دائرة", callback_data="circle"),
+                        InlineKeyboardButton(text="ضبابية", callback_data="blur"),
+                        InlineKeyboardButton(text="اطار", callback_data="border"),
                     ],
                     [
-                        InlineKeyboardButton(text="STICKER", callback_data="stick"),
-                        InlineKeyboardButton(text="ROTATE", callback_data="rotate"),
-                        InlineKeyboardButton(text="CONTRAST", callback_data="contrast"),
+                        InlineKeyboardButton(text="ملصق", callback_data="stick"),
+                        InlineKeyboardButton(text="تدوير", callback_data="rotate"),
+                        InlineKeyboardButton(text="تباين", callback_data="contrast"),
                     ],
                     [
-                        InlineKeyboardButton(text="SEPIA", callback_data="sepia"),
-                        InlineKeyboardButton(text="PENCIL", callback_data="pencil"),
-                        InlineKeyboardButton(text="CARTOON", callback_data="cartoon"),
+                        InlineKeyboardButton(text="بني داكن", callback_data="sepia"),
+                        InlineKeyboardButton(text="رسم", callback_data="pencil"),
+                        InlineKeyboardButton(text="كارتون", callback_data="cartoon"),
                     ],
                     [
-                        InlineKeyboardButton(text="INVERT", callback_data="inverted"),
-                        InlineKeyboardButton(text="GLITCH", callback_data="glitch"),
+                        InlineKeyboardButton(text="عكسي", callback_data="inverted"),
+                        InlineKeyboardButton(text="تشويه", callback_data="glitch"),
                         InlineKeyboardButton(
-                            text="REMOVE BG", callback_data="removebg"
+                            text="ازالة الخلفية", callback_data="removebg"
                         ),
                     ],
                     [
-                        InlineKeyboardButton(text="CLOSE", callback_data="close_e"),
+                        InlineKeyboardButton(text="غلق", callback_data="close_e"),
                     ],
                 ]
             ),
@@ -51,6 +51,6 @@ async def photo(client: Client, message: Message):
             return
         else:
             try:
-                await message.reply_text("Something went wrong!", quote=True)
+                await message.reply_text("هناك شيء خاطئ!", quote=True)
             except Exception:
                 return
