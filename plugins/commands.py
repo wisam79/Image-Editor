@@ -70,8 +70,8 @@ async def about(client, message):
                     ],
                     [
                         InlineKeyboardButton(
-                            "SOURCE CODE",
-                            url="https://github.com/TroJanzHEX/Image-Editor",
+                            "تحميل من اليوتيوب",
+                            url="https://t.me/youtwisam_bot",
                         )
                     ],
                 ]
