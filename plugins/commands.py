@@ -19,7 +19,7 @@ async def start(client: Client, message: Message):
                     [
                         InlineKeyboardButton(
                             "تحميل من اليوتيوب",
-                            url="https://t.me/YouTwisam_bot,",
+                            url="https://t.me/YouTwisam_bot",
                         )
                     ],
                 ]
@@ -39,7 +39,7 @@ async def help(client, message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("BACK", callback_data="start_data"),
+                        InlineKeyboardButton("رجوع", callback_data="start_data"),
                         InlineKeyboardButton("كلمني", "https://t.me/wsh22"),
                     ],
                     [
@@ -65,8 +65,8 @@ async def about(client, message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("BACK", callback_data="help_data"),
-                        InlineKeyboardButton("START", callback_data="start_data"),
+                        InlineKeyboardButton("عودة", callback_data="help_data"),
+                        InlineKeyboardButton("ابدأ", callback_data="start_data"),
                     ],
                     [
                         InlineKeyboardButton(
