@@ -4,7 +4,7 @@ class script(object):
 
 I'm a Image Editor Bot which Supports various modes
 
-For more teext me @wsh22....</b>"""
+For more text me @wsh22....</b>"""
     HELP_MSG = """Hai, Follow these Steps..,
 
 <code>🌀 Send me any Image to Edit..</code>
