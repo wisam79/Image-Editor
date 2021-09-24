@@ -18,8 +18,8 @@ async def start(client: Client, message: Message):
                     ],
                     [
                         InlineKeyboardButton(
-                            "SOURCE CODE",
-                            url="https://github.com/wisam79/Image-Editor,",
+                            "تحميل من اليوتيوب",
+                            url="https://t.me/YouTwisam_bot,",
                         )
                     ],
                 ]
@@ -40,12 +40,12 @@ async def help(client, message):
                 [
                     [
                         InlineKeyboardButton("BACK", callback_data="start_data"),
-                        InlineKeyboardButton("ABOUT", callback_data="about_data"),
+                        InlineKeyboardButton("كلمني", "https://t.me/wsh22"),
                     ],
                     [
                         InlineKeyboardButton(
-                            "رابط السورس",
-                            url="https://github.com/TroJanzHEX/Image-Editor",
+                            "تحميل من اليوتيوب",
+                            url="https://t.me/YouTwisam_bot",
                         )
                     ],
                 ]
